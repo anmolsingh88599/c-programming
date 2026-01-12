@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main(){
+    int first = 0; 
+    int second = 1;
+    int next , term;
+
+    printf("\n=====Fibonacci Series Generator=====\n");
+
+    printf("\nEnter number of terms: ");
+    scanf("%d",&term);
+
+    printf("Fibonacci Series:\n");
+
+    for(int i=1;i<=term;i++){
+        printf("%d ",first);
+        next = first + second;
+        first = second;
+        second = next;
+
+    }
+}
